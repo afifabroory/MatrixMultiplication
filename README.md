@@ -14,3 +14,10 @@ Take a look at the commit history, but here's a run-time summary of each version
 
 Image below are matrices multiplication with the same matrix size in both of operand, like [`matrix.c`](https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/2e3d2b5603f713850bc3d4910b87a871a6a72701/matrix.c#L6), but written in the Python programming language and **only** take advantage of CPU cache. \
 ![Image 1](https://user-images.githubusercontent.com/62495819/126493086-2c3c435a-1541-41e5-9d37-41eebc9294ab.png)
+
+In conclusion, to improve performance:
+- Use proper programming language, in this case if we want high speed, then use C.
+- Take advantage of CPU cache.
+- Compiler optimization
+- Of course... Data Structure & Algorithm
+- Parallelize Code! (Actually, not all code can be parallelized effectively)
