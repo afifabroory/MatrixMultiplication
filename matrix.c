@@ -3,7 +3,7 @@
 #include <sys/time.h>
 #include <omp.h>
 
-#define n 2000
+#define n 1000
 
 double A[n][n];
 double B[n][n];
