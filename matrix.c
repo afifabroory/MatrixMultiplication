@@ -1,8 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <sys/time.h>
+#include <omp.h>
 
-#define n 1000
+#define n 2000
 
 double A[n][n];
 double B[n][n];
@@ -14,6 +15,7 @@ float tdiff(struct timeval *start, struct timeval *end) {
 }
 
 int main(void) {
+
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
 			A[i][j] = (double) rand() / (double) RAND_MAX;
@@ -25,6 +27,7 @@ int main(void) {
 	struct timeval start, end;
 	gettimeofday(&start, NULL);
 
+	#pragma omp parallel for
 	for (int i = 0; i < n; ++i) {
 		for (int k = 0; k < n; ++k) {
 			for (int j = 0; j < n; ++j) {
