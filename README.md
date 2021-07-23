@@ -33,3 +33,5 @@ In conclusion, to improve performance:
 - Compiler optimization
 - Of course... Data Structure & Algorithm
 - Parallelize Code! (Actually, not all code can be parallelized effectively)
+
+I also apply matrix multiplication on my [blogspot](https://cs-informatika.blogspot.com/) (JavaScript).
