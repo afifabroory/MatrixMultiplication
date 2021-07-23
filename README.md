@@ -1,18 +1,24 @@
 [MIT OCW - Performance Engineering of Software Systems: Lecture 1](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-172-performance-engineering-of-software-systems-fall-2018/lecture-videos/lecture-1-intro-and-matrix-multiplication/)
 
+**Requirements:**
+```
+sudo apt update
+sudo apt install clang
+```
+
 **Build & Run:** 
 ```
 chmod a+x ./run.sh
 ./run.sh
 ```
 
-Take a look at the commit history, but here's a run-time summary of each version.
-**Version** | **Run Times**
---- | --- | 
-[Version 1](https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/358f076cf1aa5849849b98ecb91a6a52dc3e0b51/matrix.c) | ~10 s 
-[Version 2](https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/af5d8949b48510efc85f8ab8af597cddc2d5102e/matrix.c) | ~3 s 
-[Version 3](https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/c4a3f71000574e819e51cf7f5d5e54222b152118/matrix.c) | ~0.6 s
-[Version 4](https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/main/matrix.c) | ~0.45 s
+Here's a run-time summary of each version.
+**Version** | **Run Times** | **Description**
+--- | --- | --- |
+[Version 1](https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/358f076cf1aa5849849b98ecb91a6a52dc3e0b51/matrix.c) | ~10 s  |
+[Version 2](https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/af5d8949b48510efc85f8ab8af597cddc2d5102e/matrix.c) | ~3 s   | Interchange loop order
+[Version 3](https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/c4a3f71000574e819e51cf7f5d5e54222b152118/matrix.c) | ~0.6 s | Compiler Optimization
+[Version 4](https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/main/matrix.c) | ~0.45 s | Parallelize Code
 
 ***Note**:
 - Each version is the same matrix size, which is 1000 x 1000.
