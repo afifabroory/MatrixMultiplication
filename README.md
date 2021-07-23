@@ -1,7 +1,10 @@
 [MIT OCW - Performance Engineering of Software Systems: Lecture 1](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-172-performance-engineering-of-software-systems-fall-2018/lecture-videos/lecture-1-intro-and-matrix-multiplication/)
 
 **Build & Run:** 
-``chmod a+x ./run.sh``
+```
+chmod a+x ./run.sh
+./run.sh
+```
 
 Take a look at the commit history, but here's a run-time summary of each version.
 **Version** | **Run Times**
