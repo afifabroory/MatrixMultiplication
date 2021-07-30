@@ -34,10 +34,8 @@ In VBA, matrix 1000 x 1000 are only run in ~160 seconds, this is 2x faster than 
   <img align="center" src="https://user-images.githubusercontent.com/62495819/127616033-1725cf88-fc23-459e-8a11-8fd21c786346.PNG"/>
   <p align="center"><em>Unoptimized code</em></p>
 </div>
-Picture above are not optimized yet. Where I thought VBA are store Array in <a href="https://en.wikipedia.org/wiki/Row-_and_column-major_order">Row major order</a>. In fact, VBA Array are store in <b>Column Major Order</b>, so this is quite different with common Programming Language today (Python, C, C++, Java, etc.) where Array are store in <b>Row Major Order</b>.
-
+Picture above are not optimized yet. Where I thought VBA are store Array in <a href="https://en.wikipedia.org/wiki/Row-_and_column-major_order">Row major order</a>. In fact, VBA Array are store in <b>Column Major Order</b>, so this is quite different with common Programming Language today (Python, C, C++, Java, etc.) where Array are store in <b>Row Major Order</b>. In order to improve VBA performance, we can change loop order to take advantage of CPU cache.
 <br><br>
-In order to improve VBA performance, we can change loop order to take advantage of CPU cache.
 <div align="center">
   <img src="https://user-images.githubusercontent.com/62495819/127618759-42de1cf6-fb7f-4527-b73c-d42fe2b1ead9.PNG" />
   <img src="https://user-images.githubusercontent.com/62495819/127618762-7007b49d-3cfa-46bd-909e-46c0f9dedca8.PNG" />
