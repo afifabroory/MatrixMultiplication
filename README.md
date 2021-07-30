@@ -12,7 +12,7 @@ chmod a+x ./run.sh
 ./run.sh
 ```
 
-Here's a run-time summary of each version.
+Here's a run-time summary of each version in C Language.
 **Version** | **Run Times** | **Description**
 --- | --- | --- |
 [Version 1](https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/358f076cf1aa5849849b98ecb91a6a52dc3e0b51/matrix.c) | ~10 s  |
@@ -27,11 +27,41 @@ Here's a run-time summary of each version.
 Image below are matrices multiplication with the same matrix size in both of operand, like [`matrix.c`](https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/2e3d2b5603f713850bc3d4910b87a871a6a72701/matrix.c#L6), but written in the Python programming language and **only** take advantage of CPU cache. \
 ![Image 1](https://user-images.githubusercontent.com/62495819/126493086-2c3c435a-1541-41e5-9d37-41eebc9294ab.png)
 
+## Matrix Multiplication in VBA
+In VBA, matrix 1000 x 1000 are only run in ~160 seconds, this is 2x faster than Python.
+<p align="center">
+  <img align="center" src="https://user-images.githubusercontent.com/62495819/127615972-56ee1836-eae1-4a92-a4f8-cb37c72f5fd5.PNG"/>
+  <img align="center" src="https://user-images.githubusercontent.com/62495819/127616033-1725cf88-fc23-459e-8a11-8fd21c786346.PNG"/> </p>
+Picture above are not optimized yet. Where I thought VBA are store Array in <a href="https://en.wikipedia.org/wiki/Row-_and_column-major_order">Row major order</a>. In fact, VBA Array are store in <b>Column Major Order</b>, so this is quite different with common Programming Language today (Python, C, C++, Java, etc.) where Array are store in <b>Row Major Order</b>.
+
+<br><br>
+In order to improve VBA performance, we can change loop order to take advantage of CPU cache.
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/62495819/127618759-42de1cf6-fb7f-4527-b73c-d42fe2b1ead9.PNG" />
+  <img src="https://user-images.githubusercontent.com/62495819/127618762-7007b49d-3cfa-46bd-909e-46c0f9dedca8.PNG" />
+</p>
+Performance are improved! 1.5x faster than before.
+We can improve performance more fast, using <a href="https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/dynamic-link-library">Dynamic link library (DLL)</a> to call C++ function/procedure from VBA.
+<br><br>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/62495819/127621341-a0e22d78-96c3-4db1-862d-eac10ba3d6f6.PNG" />
+  <img src="https://user-images.githubusercontent.com/62495819/127621361-cdeff681-cef6-43b5-830a-4bbd95dfcab2.PNG" />
+</p>
+We achieve performance <b>21x faster than before!</b> :fire:
+We can optimize once again by using <a href="https://en.wikipedia.org/wiki/Optimizing_compiler">Compiler Optimization Technique</a>.
+<br><br>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/62495819/127623703-4bcbcf03-6e04-493a-8c7a-c4a6af15ef20.PNG" />
+  <img src="https://user-images.githubusercontent.com/62495819/127623764-dc61a6e7-670f-4f3e-b5c4-7625aadc815b.PNG" />
+</p>
+<p>Performance improve 5x faster :metal:</p>
+
+## Conclusion
 In conclusion, to improve performance:
-- Use proper programming language, in this case if we want high speed, then use C.
+- Use proper programming language, in this case if we want high speed, then use C/C++.
 - Take advantage of CPU cache.
 - Compiler optimization
 - Of course... Data Structure & Algorithm
-- Parallelize Code! (Actually, not all code can be parallelized effectively)
+- Parallelize Code! (Actually, not all code can be parallelized effectively) 
 
 I also apply matrix multiplication on my [blogspot](https://cs-informatika.blogspot.com/) (JavaScript).
