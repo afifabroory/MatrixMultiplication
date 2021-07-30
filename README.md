@@ -57,7 +57,7 @@ We can optimize once again by using <a href="https://en.wikipedia.org/wiki/Optim
   <img src="https://user-images.githubusercontent.com/62495819/127623764-dc61a6e7-670f-4f3e-b5c4-7625aadc815b.PNG" />
   <p align="center"><em>Using Compiler Optimization</em></p>
 </div>
-<p>Performance improve 5x faster :metal:</p>
+<p>Performance improve 5x faster :metal: So basically the last two optimization steps are just running C++ code :hand_over_mouth: But it doesn't matter, if we need matrix multiplication in Excel via VBA.</p>
 
 ## Conclusion
 In conclusion, to improve performance:
