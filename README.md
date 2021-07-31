@@ -67,4 +67,5 @@ In conclusion, to improve performance:
 - Of course... Data Structure & Algorithm
 - Parallelize Code! (Actually, not all code can be parallelized effectively) 
 
-I also apply matrix multiplication on my [blogspot](https://cs-informatika.blogspot.com/) (JavaScript).
+I also apply matrix multiplication on my [blogspot](https://cs-informatika.blogspot.com/) (JavaScript). \
+Other resource related to this repo: [High-Performance Matrix Multiplication](https://gist.github.com/nadavrot/5b35d44e8ba3dd718e595e40184d03f0)
