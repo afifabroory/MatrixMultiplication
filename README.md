@@ -13,13 +13,6 @@ chmod a+x ./run.sh
 ```
 
 Here's a run-time summary of each version in C Language.
-**Version** | **Run Times** | **Description**
---- | --- | --- |
-[Version 1](https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/358f076cf1aa5849849b98ecb91a6a52dc3e0b51/matrix.c) | ~10 s  |
-[Version 2](https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/af5d8949b48510efc85f8ab8af597cddc2d5102e/matrix.c) | ~3 s   | Interchange loop order
-[Version 3](https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/c4a3f71000574e819e51cf7f5d5e54222b152118/matrix.c) | ~0.6 s | Compiler Optimization
-[Version 4](https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/main/matrix.c) | ~0.45 s | Parallelize Code
-
 <table>
   <tr>
     <th><b>Version</b></th>
