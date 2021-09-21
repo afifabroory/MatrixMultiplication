@@ -20,6 +20,34 @@ Here's a run-time summary of each version in C Language.
 [Version 3](https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/c4a3f71000574e819e51cf7f5d5e54222b152118/matrix.c) | ~0.6 s | Compiler Optimization
 [Version 4](https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/main/matrix.c) | ~0.45 s | Parallelize Code
 
+<table>
+  <tr>
+    <th><b>Version</b></th>
+    <th><b>Run Times</b></th>
+    <th><b>Description</b></th>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/358f076cf1aa5849849b98ecb91a6a52dc3e0b51/matrix.c">Version 1</a></td>
+    <td>~10 s</td>
+    <td> - </td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/af5d8949b48510efc85f8ab8af597cddc2d5102e/matrix.c">Version 2</a></td>
+    <td>~3 s</td>
+    <td>Interchange loop order</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/c4a3f71000574e819e51cf7f5d5e54222b152118/matrix.c">Version 3</a></td>
+    <td>~0.6 s</td>
+    <td>Compiler optimization</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/afifabroory/MatrixMultiplication-Performance-Engineering/blob/main/matrix.c">Version 4</a></td>
+    <td>~0.45 s</td>
+    <td>Parallelize Code</td>
+  </tr>
+</table>
+
 ***Note**:
 - Each version is the same matrix size, which is 1000 x 1000.
 - It may give different run times on different computer!
