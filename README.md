@@ -42,6 +42,7 @@ Here's a run-time summary of each version in C Language.
 </table>
 
 ***Note**:
+- The time complexity of the algorithm are in order of O(n<sup>2</sup>)
 - Each version is the same matrix size, which is 1000 x 1000.
 - It may give different run times on different computer!
 
@@ -81,12 +82,20 @@ We can optimize once again by using <a href="https://en.wikipedia.org/wiki/Optim
 <p>Performance improve 5x faster :metal: So basically the last two optimization steps are just running C++ code :hand_over_mouth: But it doesn't matter, if we need matrix multiplication in Excel via VBA.</p>
 
 ## Conclusion
-In conclusion, to improve performance:
+In conclusion, to improve performance (Practical approach):
 - Use proper programming language, in this case if we want high speed, then use C/C++.
 - Take advantage of CPU cache.
 - Compiler optimization
 - Of course... Data Structure & Algorithm
 - Parallelize Code! (Actually, not all code can be parallelized effectively) 
+
+> Different implementation of algorithm has a different constant factor. In this case the constant factor are affected by programming language, memory hierarchy (CPU cache), dan compiler.
+
+> From the experiment. The implementation of the algorithm in Python has a large constant factor! Even when the code is optimized to take advantage of the CPU cache (order i, k, j) the constant factor decreases slightly.
+
+> From the experiments, we can conclude that the asymptotic notation shows no practical value but rather how the algorithm scales within a given input (the behavior of the function within limits).
+>
+> So, it is better to consider a hybrid approach (a mixture of theoretical and practical approaches) not only to focus on a theoretical approach or a practical approach.
 
 I also apply matrix multiplication on my [blogspot](https://cs-informatika.blogspot.com/) (JavaScript). \
 Other resource related to this repo: [High-Performance Matrix Multiplication](https://gist.github.com/nadavrot/5b35d44e8ba3dd718e595e40184d03f0)
