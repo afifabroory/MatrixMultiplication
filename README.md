@@ -89,13 +89,13 @@ In conclusion, to improve performance (Practical approach):
 - Of course... Data Structure & Algorithm
 - Parallelize Code! (Actually, not all code can be parallelized effectively) 
 
-> Different implementation of algorithm has a different constant factor. In this case the constant factor are affected by programming language, memory hierarchy (CPU cache), dan compiler.
+Different implementation of algorithm has a different constant factor. In this case the constant factor are affected by programming language, memory hierarchy (CPU cache), and compiler.
 
-> From the experiment. The implementation of the algorithm in Python has a large constant factor! Even when the code is optimized to take advantage of the CPU cache (order i, k, j) the constant factor decreases slightly.
+From the experiment. The implementation of the algorithm in Python has a large constant factor! Even when the code is optimized to take advantage of the CPU cache (order i, k, j) the constant factor decreases slightly.
 
-> From the experiments, we can conclude that the asymptotic notation shows no practical value but rather how the algorithm scales within a given input (the behavior of the function within limits).
->
-> So, it is better to consider a hybrid approach (a mixture of theoretical and practical approaches) not only to focus on a theoretical approach or a practical approach.
+From the experiments, we can conclude that the asymptotic notation shows no practical value but rather how the algorithm scales within a given input (the behavior of the function within limits).
+
+So, it is better to consider a hybrid approach (a mixture of theoretical and practical approaches) not only to focus on a theoretical approach or a practical approach.
 
 I also apply matrix multiplication on my [blogspot](https://cs-informatika.blogspot.com/) (JavaScript). \
 Other resource related to this repo: [High-Performance Matrix Multiplication](https://gist.github.com/nadavrot/5b35d44e8ba3dd718e595e40184d03f0)
